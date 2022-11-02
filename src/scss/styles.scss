@@ -16,5 +16,115 @@ $White: hsl(0, 0%, 100%);
 
 body {
   font-family: 'League Spartan', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.social {
+  max-width: 330px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &-content {
+      &_title,
+      &_desc {
+        text-align: center;
+      }
+
+      &_title {
+        color: $Very-Dark-Magenta;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &_desc {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $Dark-Grayish-Magenta;
+        line-height: 1.2;
+      }
+    }
+
+    &-stars {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.5rem;
+
+      &_rated {
+        background-color: $Light-Grayish-Magenta;
+        padding: 1rem 1.5rem;
+        border-radius: .5rem;
+        font-weight: 700;
+        color: $Very-Dark-Magenta;
+        text-align: center;
+
+        &::before {
+          content: '';
+          background-image: url(../images/icon-star.svg);
+          display: block;
+          width: 120px;
+          height: 17px;
+          background-repeat: round no-repeat;
+          margin: 10px auto 14px auto;
+        }
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &-card {
+      background-color: $Very-Dark-Magenta;
+      border-radius: .5rem;
+      padding: 2rem;
+
+      &_header {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin-bottom: 2rem;
+
+        &_img {
+          width: 2.5rem;
+          border-radius: 50%;
+        }
+
+        &_container {
+          & p {
+            color: $White;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: .3rem;
+          }
+
+          & span {
+            color: $Soft-Pink;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      &_text {
+        color: $White;
+        font-weight: 500;
+        font-size: 1.063rem;
+        line-height: 1.3;
+      }
+    }
+  }
 }
 

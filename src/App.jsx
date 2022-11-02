@@ -1,5 +1,5 @@
 import React from 'react'
-import {SocialCard} from './components/SocialCard'
+import { SocialCard } from './components/SocialCard'
 import { StarsInfo } from './components/StarsInfo'
 
 import coltonImg from './images/image-colton.jpg'

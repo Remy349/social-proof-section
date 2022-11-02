@@ -15,7 +15,7 @@ export const SocialCard = (props) => {
         </div>
       </div>
       <p className='social__cards-card_text'>
-        "{props.text}"
+        " {props.text} "
       </p>
     </article>
   )
